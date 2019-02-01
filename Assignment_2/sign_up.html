@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/myStyle.css">
+  <link rel="stylesheet" href="css/sign_up.css">
+</head>
+
+<body class="container">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <img class="logo" src='images/place_holder.png' alt="place_holder">
+      <a class="navbar-brand" href="#">Lorem Ipsum</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse nav_container" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="links nav-item nav-link" href="HomePage.html">Home</a>
+          <a class="links nav-item nav-link" href="#">Orders</a>
+          <a class="links nav-item nav-link" href="#">Contact</a>
+          <a class="links nav-item nav-link" href="user_profile.html">Profile</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="container sign_up_form">
+    <div class="form_container">
+      <form id="signUpForm" name="signUpForm" onsubmit="return form_validation()" method="post" action="#">
+        <div class="row">
+          <label id="lable_name" for="firstname">Name*</label>
+        </div>
+        <div class="row">
+          <input type="text" id="firstname" name="firstname_signUp" class="col-3 form-control" placeholder="firstname">
+          <input type="text" id="lastname" name="lastname_signUp" class="col-3 form-control" placeholder="lastname">
+        </div>
+        <div class="row">
+          <label for="email">Password*</label>
+        </div>
+        <div class="row">
+          <input type="password" id="password" name="password_signUp" class="col-6 form-control">
+        </div>
+        <div class="row">
+          <input type="password" id="password_repeat" name="password_repeat_signUp" class="col-6 form-control" placeholder="repeat password">
+        </div>
+        <div class="row">
+          <label for="email">E-mail*</label>
+        </div>
+        <div class="row">
+          <input type="text" id="email" name="email_signUp" class="col-6 form-control" placeholder="example@example.com">
+        </div>
+        <div class="row">
+          <label for="email">Phone Number*</label>
+        </div>
+        <div class="row">
+          <input type="text" id="phone_number" name="phone_number_signUp" class="col-6 form-control">
+        </div>
+        <div class="row">
+          <label for="address">Address</label>
+          <input type="text" id="address" name="address_street_address" class="form-control" placeholder="street address">
+          <input type="text" id="address_2" name="address_street_address_2" class="form-control" placeholder="street address 2">
+        </div>
+        <div class="row">
+          <input type="text" id="city" name="city_signUp" class="col-6 form-control" placeholder="city name">
+          <input type="text" id="state" name="state_signUp" class="col-6 form-control" placeholder="state name">
+          <input type="text" id="zip_code" name="zip_code_signUp" class="col-6 form-control" placeholder="zip code">
+          <input type="text" id="country" name="country_signUp" class="col-6 form-control" placeholder="country">
+        </div>
+        <div class="row">
+          <label>Profile Image</label><br>
+        </div>
+        <div class="row">
+          <img id="profile_image" src='images/place_holder.png' alt="place_holder">
+        </div>
+        <br>
+        <p>* required</p>
+        <input type="checkbox" name="agree" value="agree"><p id="agree">Agree Terms of Use</p>
+        <hr>
+        <input type="submit" name="edit" id="submitbutton" class="btn btn-warning" value="Sign Up">
+      </form>
+    </div>
+
+  </div>
+  <footer>
+    <div class="container footer">
+      <hr>
+      <div class="row">
+        <div class="col">
+          <img class="logo" src='images/place_holder.png' alt="place_holder">
+        </div>
+        <div class="col-lg bottom_nav_container">
+          <ul class="bottom_nav">
+            <li><a class="bottom_nav_link" href="#">Home</a></li>
+            <li><a class="bottom_nav_link" href="#">Order</a></li>
+            <li><a class="bottom_nav_link" href="#">Contact</a></li>
+            <li><a class="bottom_nav_link" href="#">Login</a></li>
+          </ul>
+        </div>
+        <div class="col-lg bottom_nav_container">
+          <ul class="bottom_nav">
+            <li><a class="bottom_nav_link" href="#">Cras justo odio</a></li>
+            <li><a class="bottom_nav_link" href="#">Dapibus ac facilisis</a></li>
+            <li><a class="bottom_nav_link" href="#">Morbi risus</a></li>
+            <li><a class="bottom_nav_link" href="#">Porta ac consectetur</a></li>
+            <li><a class="bottom_nav_link" href="#">Vestibulum</a></li>
+          </ul>
+        </div>
+        <div class="col-lg bottom_nav_container">
+          <ul class="bottom_nav">
+            <li><a class="bottom_nav_link" href="#">About</a></li>
+            <li><a class="bottom_nav_link" href="#">Cookies</a></li>
+            <li><a class="bottom_nav_link" href="#">Privacy Statement</a></li>
+            <li><a class="bottom_nav_link" href="#">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <p class="copyright">&copy; 2019 aaa.com CSCI 5709 Project/Assignment</p>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/form_validation.js"></script>
+  </footer>
+</body>
+
+</html>

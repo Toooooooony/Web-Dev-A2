@@ -1,0 +1,27 @@
+.sign_up_form {
+  text-align: center;
+}
+
+.form_container {
+  display: inline-block;
+}
+
+#profile_image {
+  width: 100px;
+  height: 100px;
+  margin: 0;
+}
+
+input {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+label {
+  margin-top: 15px;
+}
+
+#agree{
+  display: inline;
+  margin-left: 10px;
+}
